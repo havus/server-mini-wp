@@ -7,7 +7,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 app.use(cors())
 
-mongoose.connect('mongodb://localhost:27017/mini_wp', {
+// mongoose.connect('mongodb://localhost:27017/mini_wp', {
+mongoose.connect('mongodb+srv://admin:admin@mini-wp-nwspo.gcp.mongodb.net/test?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useCreateIndex: true,
 });
